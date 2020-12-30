@@ -12,8 +12,8 @@ div[class=education] {
     background-color: lightgreen;
 }
 
-div[class=education] > li {
-    list-style: none;
+div[class=education] > ul {
+    list-style-type: none;
 }
 
 h4 {

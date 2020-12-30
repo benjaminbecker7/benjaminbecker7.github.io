@@ -1,9 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+
+    background-color: lightcyan;
 }
 
 header {
     text-align: center;
+}
+
+div[class=education] {
+    background-color: lightgreen;
 }
 
 h4 {

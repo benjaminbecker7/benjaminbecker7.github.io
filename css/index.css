@@ -9,11 +9,29 @@ header {
 }
 
 div[class=education] {
+    background-color: pink;
+}
+
+div[class=experience] {
     background-color: lightgreen;
 }
 
 div[class=education] > ul {
     list-style-type: none;
+}
+
+section[class=contact]:first-child {
+    float: left;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(100, 170, 170);
+}
+
+section[class=contact]:nth-child(2) {
+    float: left;
+    width: 50%;
+    height: 100px;
+    background-color: rgb(60, 170, 170);
 }
 
 h4 {

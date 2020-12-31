@@ -23,18 +23,22 @@ div[class=education] > ul {
     list-style-type: none;
 }
 
-section[class=contact]:first-child {
+section[class=contact] article[class=left] {
     float: left;
     width: 50%;
     height: 100px;
     background-color: rgb(100, 170, 170);
 }
 
-section[class=contact]:nth-child(2) {
+section[class=contact] article[class=right] {
     float: left;
     width: 50%;
     height: 100px;
     background-color: rgb(60, 170, 170);
+}
+
+section[class=contact] article p {
+    padding:0;
 }
 
 h4 {

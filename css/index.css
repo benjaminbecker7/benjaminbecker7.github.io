@@ -11,6 +11,40 @@ header {
     text-align: center;
 }
 
+.nav {
+    width: 100%;
+    overflow: auto;
+    background-color: #f1f1f1;
+}
+
+.nav a {
+    float:left;
+    padding: 12 px;
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    text-align: center;
+}
+
+.nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.nav a.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 50px) {
+    .nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
 div[class=education] {
     background-color: pink;
 }
@@ -19,21 +53,21 @@ div[class=experience] {
     background-color: lightgreen;
 }
 
-div[class=education] > ul {
+div[class=education] ul {
     list-style-type: none;
 }
 
-section[class=contact] article {
+div[class=contact] article {
     float: left;
     width: 50%;
     height: 120px;
 }
 
-section[class=contact] article[class=left] {
+div[class=contact] article[class=left] {
     background-color: rgb(100, 170, 170);
 }
 
-section[class=contact] article[class=right] {
+div[class=contact] article[class=right] {
     background-color: rgb(60, 170, 170);
 }
 

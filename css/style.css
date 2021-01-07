@@ -7,18 +7,17 @@ body {
     background-color: lightcyan;
 }
 
-header article {
-    float: left;
+header {
+    width:100%;
 }   
 
-header article[class=left] {
-    width: 75%;
+header div {
+    float: left;
+    padding-top:10px;
+    padding-bottom:0px;
+    padding-right:10px;
+    padding-left:10px;
 }
-
-header article[class=right] {
-    width: 25%;
-}
-
 
 .nav {
     width: 100%;

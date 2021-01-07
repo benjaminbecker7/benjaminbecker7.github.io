@@ -12,10 +12,11 @@ header article {
 }   
 
 header article[class=left] {
-    width: 70%;
+    width: 75%;
 }
+
 header article[class=right] {
-    width: 30%;
+    width: 25%;
 }
 
 

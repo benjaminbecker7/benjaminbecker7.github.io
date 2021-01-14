@@ -1,51 +1,114 @@
-* {
-    box-sizing:border-box
-}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightcyan;
+    background-color: #64AAAA;
+    color: #F3EFF5;
 }
 
 header {
+    margin-left: -10px;
+    padding-left: 10px;
     width:100%;
+    background-color: #161925;
 }   
 
-header div {
-    float: left;
-    padding-top:10px;
+
+
+.page-top {
+    padding-top:0px;
     padding-bottom:0px;
     padding-right:10px;
-    padding-left:10px;
 }
 
-.nav {
-    width: 100%;
-    overflow: auto;
-    background-color: #f1f1f1;
+.page-top img {
+    border-radius: 50%;
 }
 
-.nav a {
-    float:left;
-    padding: 12 px;
-    color: #000;
-    text-decoration: none;
-    font-size: 17px;
-    width: 25%;
+/* Navbar container */
+.navbar {
+    margin: -10px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #F3EFF5;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.nav a:hover {
-    background-color: #555;
-    color: white;
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #F3EFF5;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #E4572E;
 }
 
-.nav a.active {
-    background-color: #4CAF50;
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F3Eff5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+html:not([data-scroll='0']) body {
+    padding-top: 200px;
+}
+    
+html:not([data-scroll='0']) header {
+    scale: 3;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 10px 50px rgba(100,170,170,.5);
+ }
 
 @media screen and (max-width: 50px) {
-    .nav a {
+    .navbar a {
         float: none;
         display: block;
         width: 100%;
@@ -53,6 +116,7 @@ header div {
     }
 }
 
+/*
 div[class=education] {
     background-color: pink;
 }
@@ -86,3 +150,4 @@ h4 {
 h4 > span {
     float: right;
 }
+*/

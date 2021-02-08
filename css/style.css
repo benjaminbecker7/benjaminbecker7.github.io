@@ -18,6 +18,10 @@ main * {
     margin-bottom: 10px;
 }
 
+.section {
+    scroll-margin-top: 170px;
+}
+
 .page-top {
     padding-top:0px;
     padding-bottom:0px;

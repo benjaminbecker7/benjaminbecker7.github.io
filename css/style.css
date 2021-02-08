@@ -18,6 +18,10 @@ main * {
     margin-bottom: 10px;
 }
 
+.active {
+    background-color: salmon;
+}
+
 .section {
     scroll-margin-top: 188px;
 }

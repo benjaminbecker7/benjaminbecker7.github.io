@@ -6,12 +6,19 @@ body {
     color: #F3EFF5;
 }
 
-header {
+header, footer {
     margin-left: -10px;
     padding-left: 10px;
     width:100%;
     background-color: #161925;
 }   
+
+footer {
+    margin-top:30px;
+    font-size: 12px;
+    padding-top: 1px;
+    box-shadow: 0 50vh 0 50vh #161925;
+}
 
 main * {
     margin-top: 10px;
@@ -34,6 +41,11 @@ main * {
 
 .page-top img {
     border-radius: 50%;
+}
+
+/* so that list items are not larger than the headers */
+main ul {
+    font-size: 14px;
 }
 
 /* Navbar container */
@@ -124,6 +136,18 @@ html:not([data-scroll='0']) header {
         display: block;
         width: 100%;
         text-align: left;
+    }
+}
+
+@media (max-width: 944px) {
+    html:not([data-scroll='0']) body {
+        padding-top: 200px;
+    }
+}
+
+@media (max-width: 547px) {
+    html:not([data-scroll='0']) body {
+        padding-top: 230px;
     }
 }
 

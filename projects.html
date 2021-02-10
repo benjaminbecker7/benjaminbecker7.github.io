@@ -53,7 +53,7 @@
             <h3><a style="color: #F3EFF5;" href="https://politicalaccountability.net/hifi/files/Conflicted-Consequences.pdf" target="_blank" rel="noreferrer noopener">Conflicted Consequences</a></h3>
             <p>
                 A research report I developed while working at the Center for Political Accountability. 
-                We traced the donations of publicly-traded companies to IRS Section 527 (political) 
+                We traced the donations of publicly-traded companies to IRS Section 527 
                 organizations to show the impact of publicly-traded companies on elections and, by 
                 extension, the policies passed by the candidates they helped to elect. In the end, we 
                 proved that a lot of publicly-traded companies end up indirectly giving money to 
@@ -70,7 +70,22 @@
                 and the background, display background processes, and kill processes. However, I decided
                 to go above and beyond the project description by creating a multifile project structure,
                 adding an ANSI-colored command line interface, and adding support for output redirection and
-                basic bash commands such as "echo", "cd", and "help".
+                basic bash commands such as <code>echo</code>, <code>cd</code>, and <code>help</code>.
+            </p>
+
+            <br>
+
+            <h3><a style="color: #F3EFF5;" href="https://github.com/benjaminbecker7/CPA_ResearchClient" target="_blank" rel="noreferrer noopener">The CPA Research Client</a></h3>
+            <p>
+                My categorization algorithm ported to Python with a command-line interface and efficiency
+                optimizations. The program allows for users to upload pre-categorized datasets to the system, 
+                and then use the system data to fill out uncategorized datasets. When a pre-categorized
+                Excel file with 527 donations is fed into the algorithm, it records those categories into 
+                dictionaries with keys set as the categories and the values as lists of what donor names
+                can go under that category. Upon closing, the program saves those dictionaries into files 
+                with custom delimiting in the <code>resources</code> directory. Upon opening, the program
+                can then load back the categorization data into the dictionaries to fill uncategorized 
+                datasets.
             </p>
 
             

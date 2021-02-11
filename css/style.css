@@ -16,7 +16,12 @@ header, footer {
     padding-left: 10px;
     width:100%;
     background-color: #161925;
-}   
+}  
+
+header img {
+    width:100px; 
+    height:100px;
+}
 
 footer {
     margin-top:30px;
@@ -147,26 +152,83 @@ html:not([data-scroll='0']) header {
     }
 }
 
-/*@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
-    h1 {
-        font-size: 1 em;
+    header {
+        font-size: 75%;
     }
 
-    h2 {
-        font-size: .75 em;
+    .navbar a {
+        font-size: 90%;
     }
 
-    a {
-        font-size: 8px;
+    .dropdown .dropbtn {
+        font-size: 90%;
     }
 
-    button {
-        font-size: 8px;
+    main {
+        font-size: 90%;
+    }
+
+    main ul {
+        font-size: 90%;
+    }
+
+    footer {
+        font-size: 90%;
     }
     
     html:not([data-scroll='0']) body {
-        padding-top: 290;
+        padding-top: 170px;
     }
-}*/
+}
 
+
+@media screen and (max-width: 360px) {
+
+    header {
+        font-size: 75%;
+    }
+
+    .navbar a {
+        font-size: 75%;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 75%;
+    }
+
+    main {
+        font-size: 75%;
+    }
+
+    main ul {
+        font-size: 75%;
+    }
+
+    footer {
+        font-size: 75%;
+    }
+    
+    html:not([data-scroll='0']) body {
+        padding-top: 190px;
+    }
+}
+
+
+/* iPhone 5/s width */
+@media screen and (max-width: 320px) {
+
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header, .navbar a, .dropdown .dropbtn, main, main ul, footer {
+        font-size: 50%;
+    }
+    
+    html:not([data-scroll='0']) body {
+        padding-top: 120px;
+    }
+}

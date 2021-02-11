@@ -1,9 +1,14 @@
 
+:root {
+    --mainbg: #64AAAA;
+    --fontcolor: #F3EFF5;
+    --fontsize_footer: 12px;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #64AAAA;
-    color: #F3EFF5;
+    background-color: var(--mainbg);
+    color: var(--fontcolor);
 }
 
 header, footer {
@@ -15,7 +20,7 @@ header, footer {
 
 footer {
     margin-top:30px;
-    font-size: 12px;
+    font-size: var(--fontsize_footer);
     padding-top: 1px;
     box-shadow: 0 50vh 0 50vh #161925;
 }
@@ -26,7 +31,7 @@ main * {
 }
 
 .active {
-    background-color: salmon;
+    background-color: #A53F2B;
 }
 
 .section {
@@ -60,7 +65,7 @@ main ul {
 .navbar a {
     float: left;
     font-size: 16px;
-    color: #F3EFF5;
+    color: var(--fontcolor);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -77,7 +82,7 @@ main ul {
     font-size: 16px;
     border: none;
     outline: none;
-    color: #F3EFF5;
+    color: var(--fontcolor);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -130,23 +135,38 @@ html:not([data-scroll='0']) header {
     box-shadow: 0 10px 50px rgba(100,170,170,.5);
  }
 
-@media screen and (max-width: 50px) {
-    .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-}
-
-@media (max-width: 944px) {
+@media screen and (max-width: 944px) {
     html:not([data-scroll='0']) body {
         padding-top: 200px;
     }
 }
 
-@media (max-width: 547px) {
+@media screen and (max-width: 547px) {
     html:not([data-scroll='0']) body {
         padding-top: 230px;
     }
 }
+
+/*@media screen and (max-width: 450px) {
+
+    h1 {
+        font-size: 1 em;
+    }
+
+    h2 {
+        font-size: .75 em;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    button {
+        font-size: 8px;
+    }
+    
+    html:not([data-scroll='0']) body {
+        padding-top: 290;
+    }
+}*/
+

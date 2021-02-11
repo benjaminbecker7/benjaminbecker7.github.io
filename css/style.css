@@ -135,13 +135,13 @@ html:not([data-scroll='0']) header {
     box-shadow: 0 10px 50px rgba(100,170,170,.5);
  }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 974px) {
     html:not([data-scroll='0']) body {
         padding-top: 200px;
     }
 }
 
-@media screen and (max-width: 547px) {
+@media screen and (max-width: 577px) {
     html:not([data-scroll='0']) body {
         padding-top: 230px;
     }

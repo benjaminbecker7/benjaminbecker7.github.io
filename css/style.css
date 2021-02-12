@@ -35,6 +35,10 @@ main * {
     margin-bottom: 10px;
 }
 
+main a {
+    color: #F3EFF5;
+}
+
 .active {
     background-color: #A53F2B;
 }

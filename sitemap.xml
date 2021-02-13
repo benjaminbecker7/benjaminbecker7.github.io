@@ -3,16 +3,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://www.bmbecker.com/</loc>
+        <loc>https://www.bmbecker.com/</loc>
     </url>
     <url>
-        <loc>http://www.bmbecker.com/about-me.html</loc>
+        <loc>https://www.bmbecker.com/about-me.html</loc>
     </url>
     <url>
-        <loc>http://www.bmbecker.com/projects.html</loc>
+        <loc>https://www.bmbecker.com/projects.html</loc>
     </url>
     <url>
-        <loc>http://www.bmbecker.com/contact-me.html</loc>
+        <loc>https://www.bmbecker.com/contact-me.html</loc>
     </url>
 
 </urlset>

@@ -6,9 +6,12 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Lato', sans-serif;
     background-color: var(--mainbg);
     color: var(--fontcolor);
+    padding-top: 170px;
+    transition: 0.2s;
 }
 
 header, footer {
@@ -16,11 +19,25 @@ header, footer {
     padding-left: 10px;
     width:100%;
     background-color: #161925;
-}  
+} 
 
-header img {
+header {
+    scale: 3;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 10px 50px rgba(100,170,170,.5);
+ }
+
+#header {
+    transition: 0.2s;
+}
+
+#header-img {
     width:100px; 
     height:100px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.2s;
 }
 
 footer {
@@ -44,17 +61,13 @@ main a {
 }
 
 .section {
-    scroll-margin-top: 188px;
+    scroll-margin-top: 120px;
 }
 
 .page-top {
     padding-top:0px;
     padding-bottom:0px;
     padding-right:10px;
-}
-
-.page-top img {
-    border-radius: 50%;
 }
 
 /* so that list items are not larger than the headers */
@@ -132,17 +145,6 @@ main ul {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-html:not([data-scroll='0']) body {
-    padding-top: 170px;
-}
-    
-html:not([data-scroll='0']) header {
-    scale: 3;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 10px 50px rgba(100,170,170,.5);
- }
 
 @media screen and (max-width: 974px) {
     html:not([data-scroll='0']) body {

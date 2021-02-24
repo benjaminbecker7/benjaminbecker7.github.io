@@ -80,7 +80,7 @@ main ul {
     margin: -10px;
     overflow: hidden;
     background-color: #333;
-    font-family: Arial;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Links inside the navbar */
@@ -147,13 +147,13 @@ main ul {
 }
 
 @media screen and (max-width: 974px) {
-    html:not([data-scroll='0']) body {
+    body {
         padding-top: 200px;
     }
 }
 
 @media screen and (max-width: 577px) {
-    html:not([data-scroll='0']) body {
+    body {
         padding-top: 230px;
     }
 }
@@ -184,7 +184,7 @@ main ul {
         font-size: 90%;
     }
     
-    html:not([data-scroll='0']) body {
+    body {
         padding-top: 170px;
     }
 }
@@ -216,7 +216,7 @@ main ul {
         font-size: 75%;
     }
     
-    html:not([data-scroll='0']) body {
+    body {
         padding-top: 190px;
     }
 }
@@ -234,7 +234,7 @@ main ul {
         font-size: 50%;
     }
     
-    html:not([data-scroll='0']) body {
+    body {
         padding-top: 120px;
     }
 }

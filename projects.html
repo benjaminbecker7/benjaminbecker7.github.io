@@ -1,119 +1,236 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Benjamin Becker</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamin Becker</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="resources/icon.png">
-    </head>
-    
-    <body>
-        <header>
-            <table style="margin-top: -5px;" class="page-top">
-                <tr>
-                    <td>
-                        <a style="padding-left:10px;" href="index.html">
-                            <img alt="Picture of myself" style="text-align:center;" src="resources/icon.png">
-                        </a>
-                    </td>
-                    <td>
-                        <h1 style="padding-left: 20px;">Benjamin Becker</h1>
-                        <h2 style="padding-left: 20px; padding-bottom: 5px;">Werner Brandt Research Fellow at the Center for Political Accountability</h2>
-                    </td>
-                </tr>
-            </table>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="resources/icon.png" />
+  </head>
 
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <div class="dropdown">
-                    <button onclick="window.location.href='about-me.html'" class="dropbtn">About Me
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="about-me.html#education">Education</a>
-                        <a href="about-me.html#experience">Work Experience</a>
-                        <a href="about-me.html#leadership">Leadership Experience</a>
-                        <a href="about-me.html#skills">Skills</a>
-                    </div>
-                </div>
-                <a class="active" href="projects.html">Projects</a>
-                <a href="contact-me.html" style="float: right; background: #529e13; padding-right:30px;">Contact Me!</a>
-            </div>
-        </header>
-        <main>
-            <div style="text-align: center;">
-                <h2>Projects</h2>
-                <h5><em>(Click on a project name to see the project)</em></h5>
-            </div>
+  <body>
+    <header>
+      <table style="margin-top: -5px" class="page-top">
+        <tr>
+          <td>
+            <a style="padding-left: 10px" href="index.html">
+              <img
+                alt="Picture of myself"
+                style="text-align: center"
+                src="resources/icon.png"
+              />
+            </a>
+          </td>
+          <td>
+            <h1 style="padding-left: 20px">Benjamin Becker</h1>
+            <h2 style="padding-left: 20px; padding-bottom: 5px">
+              Software Developer
+            </h2>
+          </td>
+        </tr>
+      </table>
 
-            <hr>
-            <br>
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button
+            onclick="window.location.href='about-me.html'"
+            class="dropbtn"
+          >
+            About Me
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about-me.html#education">Education</a>
+            <a href="about-me.html#experience">Work Experience</a>
+            <a href="about-me.html#leadership">Leadership Experience</a>
+            <a href="about-me.html#skills">Skills</a>
+          </div>
+        </div>
+        <a href="my-story.html">My Story</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a
+          href="contact-me.html"
+          class="contact-me"
+          style="float: right;"
+          >Contact Me!</a
+        >
+      </div>
+    </header>
+    <main>
+      <div style="text-align: center">
+        <h2>Projects</h2>
+        <h5><em>(Click on a project name to see the project)</em></h5>
+      </div>
 
-            <h3><a style="color: #F3EFF5;" href="https://politicalaccountability.net/hifi/files/Conflicted-Consequences.pdf" target="_blank" rel="noreferrer noopener">Conflicted Consequences</a></h3>
+      <hr />
+      <br />
+
+      <table>
+        <tr>
+          <td class="table-cell">
+            <img class="table-image" src="./resources/stock.png" />
+          </td>
+          <td class="table-text">
+            <h3>
+              <a
+                href="https://politicalaccountability.net/hifi/files/Conflicted-Consequences.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Conflicted Consequences</a
+              >
+            </h3>
             <p>
-                A research report I developed while working at the Center for Political Accountability. 
-                We traced the donations of publicly-traded companies to IRS Section 527 
-                organizations to show the impact of publicly-traded companies on elections and, by 
-                extension, the policies passed by the candidates they helped to elect. In the end, we 
-                proved that a lot of publicly-traded companies end up indirectly giving money to 
-                candidates who pass policies that contradict the values that they publicly espouse.
+              A research report I developed while working at the Center for
+              Political Accountability. We traced the donations of
+              publicly-traded companies to IRS Section 527 organizations to show
+              the impact of publicly-traded companies on elections and, by
+              extension, the policies passed by the candidates they helped to
+              elect. In the end, we proved that a lot of publicly-traded
+              companies end up indirectly giving money to candidates who pass
+              policies that contradict the values that they publicly espouse.
             </p>
+          </td>
 
-            <br>
-
-            <h3><a style="color: #F3EFF5;" href="https://github.com/benjaminbecker7/JacksaFactions" target="_blank" rel="noreferrer noopener">The JacksaFactions Plugin</a></h3>
+          <td class="table-text" style="text-align: right">
+            <h3>
+              <a
+                href="https://github.com/benjaminbecker7/JacksaFactions"
+                target="_blank"
+                rel="noreferrer noopener"
+                >The JacksaFactions Plugin</a
+              >
+            </h3>
             <p>
-                A Minecraft server plugin I created using Java for the Jacksa.TV Minecraft server. 
-                It creates a system through which players are able to make factions on the server, invite 
-                their friends to their factions, and claim land. It was created to address the idea that 
-                not many full-form faction plugins in Minecraft were developed to maintain information across
-                multiple servers on the same network. To do this, the plugin uses a common SQL database to 
-                sync faction and claim data across the servers. To make the plugin operations scalable, I 
-                implemented a caching system and used asynchronous threads wherever possible to minimize 
-                the amount of time the server would spend connecting to the SQL database on its main thread.
+              A Minecraft server plugin I created using Java for the Jacksa.TV
+              Minecraft server. It creates a system through which players are
+              able to make factions on the server, invite their friends to their
+              factions, and claim land. It was created to address the idea that
+              not many full-form faction plugins in Minecraft were developed to
+              maintain information across multiple servers on the same network.
+              To do this, the plugin uses a common SQL database to sync faction
+              and claim data across the servers. To make the plugin operations
+              scalable, I implemented a caching system and used asynchronous
+              threads wherever possible to minimize the amount of time the
+              server would spend connecting to the SQL database on its main
+              thread.
             </p>
-
-            <br>
-
-            <h3><a style="color: #F3EFF5;" href="https://github.com/benjaminbecker7/Shell" target="_blank" rel="noreferrer noopener">BASH: The Ben and Alex Shell</a></h3>
+          </td>
+          <td class="table-cell">
+            <img class="table-image" src="./resources/minecraft.png" />
+          </td>
+        </tr>
+        <tr>
+          <td class="table-cell">
+            <img class="table-image" src="./resources/command-line.png" />
+          </td>
+          <td class="table-text">
+            <h3>
+              <a
+                href="https://github.com/benjaminbecker7/Shell"
+                target="_blank"
+                rel="noreferrer noopener"
+                >BASH: The Ben and Alex Shell</a
+              >
+            </h3>
             <p>
-                A simple bash-like shell that I coded for a project in my Introduction to Computer
-                Systems class in Fall of 2020. The assignment was simple: use multiprocessing to
-                create a shell that is capable of running external commands in both the foreground
-                and the background, display background processes, and kill processes. However, I decided
-                to go above and beyond the project description by creating a multifile project structure,
-                adding an ANSI-colored command line interface, and adding support for output redirection and
-                basic bash commands such as echo, cd, and help.
+              A simple bash-like shell that I coded for a project in my
+              Introduction to Computer Systems class in Fall of 2020. The
+              assignment was simple: use multiprocessing to create a shell that
+              is capable of running external commands in both the foreground and
+              the background, display background processes, and kill processes.
+              However, I decided to go above and beyond the project description
+              by creating a multifile project structure, adding an ANSI-colored
+              command line interface, and adding support for output redirection
+              and basic bash commands such as echo, cd, and help.
             </p>
-
-            <br>
-
-            <h3><a style="color: #F3EFF5;" href="https://github.com/benjaminbecker7/CPA_ResearchClient" target="_blank" rel="noreferrer noopener">The CPA Research Client</a></h3>
+          </td>
+          <td class="table-text" style="text-align: right">
+            <h3>
+              <a
+                href="https://github.com/benjaminbecker7/CPA_ResearchClient"
+                target="_blank"
+                rel="noreferrer noopener"
+                >The CPA Research Client</a
+              >
+            </h3>
             <p>
-                My categorization algorithm ported to Python with a command-line interface and efficiency
-                optimizations. The program allows for users to upload pre-categorized datasets to the system, 
-                and then use the system data to fill out uncategorized datasets. When a pre-categorized
-                Excel file with 527 donations is fed into the algorithm, it records those categories into 
-                dictionaries with keys set as the categories and the values as lists of what donor names
-                can go under that category. Upon closing, the program saves those dictionaries into files 
-                with custom delimiting in the resources directory. Upon opening, the program
-                can then load back the categorization data into the dictionaries to fill uncategorized 
-                datasets.
+              My categorization algorithm ported to Python with a command-line
+              interface and efficiency optimizations. The program allows for
+              users to upload pre-categorized datasets to the system, and then
+              use the system data to fill out uncategorized datasets. When a
+              pre-categorized Excel file with 527 donations is fed into the
+              algorithm, it records those categories into dictionaries with keys
+              set as the categories and the values as lists of what donor names
+              can go under that category. Upon closing, the program saves those
+              dictionaries into files with custom delimiting in the resources
+              directory. Upon opening, the program can then load back the
+              categorization data into the dictionaries to fill uncategorized
+              datasets.
             </p>
+          </td>
+          <td class="table-cell">
+            <img class="table-image" src="./resources/research.png" />
+          </td>
+        </tr>
+      </table>
+    </main>
 
-            
-            
-        </main>
+    <br />
 
-        <br>
+    <footer>
+      <!--style="position:absolute; bottom:0;"-->
+      <p>
+        This website was created by Benjamin Becker and is hosted by Github.io
+      </p>
+      <p>
+        To learn how you can contact the developer, click on the
+        <strong>Contact Me!</strong> button in the navigation bar
+      </p>
+      <div>
+        Icons made by
+        <a
+          style="color: var(--fontcolor1);"
+          href="https://www.freepik.com"
+          title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a
+          style="color: var(--fontcolor1);"
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Icons made by
+        <a
+          style="color: var(--fontcolor1);"
+          href="https://www.flaticon.com/authors/those-icons"
+          title="Those Icons"
+          >Those Icons</a
+        >
+        from
+        <a
+          style="color: var(--fontcolor1);"
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
 
-        <footer> <!--style="position:absolute; bottom:0;"-->
-            <p>This website was created by Benjamin Becker and is hosted by Github.io</p>
-            <p>To learn how you can contact the developer, click on the <strong>Contact Me!</strong> button in the navigation bar</p>
-        </footer>
-
-    </body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/projects.js" charset="UTF-8"></script>
+  </body>
 </html>

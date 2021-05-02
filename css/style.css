@@ -1,238 +1,300 @@
-
 :root {
-    --mainbg: #64AAAA;
-    --fontcolor: #F3EFF5;
-    --fontsize_footer: 12px;
+  --mainbg: #aad8d3;
+  --secondarybg: #393e46;
+  --navbg: #00adb5;
+  --active: #a53f2b;
+  --fontcolor1: #eeeeee;
+  --fontcolor2: #393e46;
+  --fontsize_footer: 12px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--mainbg);
-    color: var(--fontcolor);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--mainbg);
+  color: var(--fontcolor2);
 }
 
-header, footer {
-    margin-left: -10px;
-    padding-left: 10px;
-    width:100%;
-    background-color: #161925;
-}  
+header,
+footer {
+  margin-left: -10px;
+  padding-left: 10px;
+  width: 100%;
+  color: var(--fontcolor1);
+  background-color: var(--secondarybg);
+}
 
 header img {
-    width:100px; 
-    height:100px;
+  width: 100px;
+  height: 100px;
 }
 
 footer {
-    margin-top:30px;
-    font-size: var(--fontsize_footer);
-    padding-top: 1px;
-    box-shadow: 0 50vh 0 50vh #161925;
+  margin-top: 30px;
+  font-size: var(--fontsize_footer);
+  padding-top: 1px;
+  box-shadow: 0 50vh 0 50vh var(--secondarybg);
 }
 
 main * {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main a {
-    color: #F3EFF5;
+  color: var(--fontcolor2);
 }
 
 .active {
-    background-color: #A53F2B;
+  background-color: var(--active);
 }
 
 .section {
-    scroll-margin-top: 188px;
+  scroll-margin-top: 188px;
 }
 
 .page-top {
-    padding-top:0px;
-    padding-bottom:0px;
-    padding-right:10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 10px;
 }
 
 .page-top img {
-    border-radius: 50%;
+  border-radius: 50%;
+}
+
+hr {
+  border-bottom: none;
 }
 
 /* so that list items are not larger than the headers */
 main ul {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* Navbar container */
 .navbar {
-    margin: -10px;
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
+  margin: -10px;
+  overflow: hidden;
+  background-color: var(--navbg);
+  font-family: Arial;
 }
 
 /* Links inside the navbar */
 .navbar a {
-    float: left;
-    font-size: 16px;
-    color: var(--fontcolor);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  font-size: 16px;
+  color: var(--fontcolor1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.contact-me {
+  
+  background: #529e13; 
+  margin-right: 15px;
 }
 
 /* The dropdown container */
 .dropdown {
-    float: left;
-    overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
-  
+
 /* Dropdown button */
 .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: var(--fontcolor);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--fontcolor1);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
-  
+
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #E4572E;
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #e4572e;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F3Eff5;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: var(--fontcolor1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-html:not([data-scroll='0']) body {
-    padding-top: 170px;
+html:not([data-scroll="0"]) body {
+  padding-top: 170px;
 }
-    
-html:not([data-scroll='0']) header {
-    scale: 3;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 10px 50px rgba(100,170,170,.5);
- }
 
-@media screen and (max-width: 974px) {
-    html:not([data-scroll='0']) body {
-        padding-top: 200px;
-    }
+html:not([data-scroll="0"]) header {
+  scale: 3;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 10px 50px rgba(100, 170, 170, 0.5);
+}
+
+.table-text {
+  vertical-align: top;
+  padding: 0 15px 0 15px;
+  width: 43vw;
+}
+
+.table-image {
+  width: 7vw;
+}
+
+.table-cell {
+  vertical-align: top;
+  padding: 0 15px;
+}
+
+.table-head {
+  vertical-align: top;
+  text-align: left;
+  padding: 0 15px;
+}
+
+/*@media screen and (max-width: 974px) {
+  html:not([data-scroll="0"]) body {
+    padding-top: 200px;
+  }
 }
 
 @media screen and (max-width: 577px) {
-    html:not([data-scroll='0']) body {
-        padding-top: 230px;
-    }
-}
+  html:not([data-scroll="0"]) body {
+    padding-top: 230px;
+  }
+}*/
 
 @media screen and (max-width: 450px) {
+  header {
+    padding-top: 5px;
+    font-size: 75%;
+  }
 
-    header {
-        font-size: 75%;
-    }
+  .navbar {
+    margin-top: 1px;
+  }
 
-    .navbar a {
-        font-size: 90%;
-    }
+  .navbar a {
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .dropdown .dropbtn {
-        font-size: 90%;
-    }
+  .dropdown .dropbtn {
+    font-size: 90%;
+  }
+  
+  main {
+    margin-top: -10px;
+    font-size: 90%;
+  }
 
-    main {
-        font-size: 90%;
-    }
+  main ul {
+    font-size: 90%;
+  }
 
-    main ul {
-        font-size: 90%;
-    }
+  footer {
+    font-size: 90%;
+  }
 
-    footer {
-        font-size: 90%;
-    }
-    
-    html:not([data-scroll='0']) body {
-        padding-top: 170px;
-    }
+  /*
+  html:not([data-scroll="0"]) body {
+    padding-top: 170px;
+  }*/
 }
-
 
 @media screen and (max-width: 360px) {
+  header {
+    font-size: 75%;
+  }
 
-    header {
-        font-size: 75%;
-    }
+  .navbar a {
+    font-size: 75%;
+  }
 
-    .navbar a {
-        font-size: 75%;
-    }
+  .dropdown .dropbtn {
+    font-size: 75%;
+  }
 
-    .dropdown .dropbtn {
-        font-size: 75%;
-    }
+  main {
+    font-size: 75%;
+  }
 
-    main {
-        font-size: 75%;
-    }
+  main ul {
+    font-size: 75%;
+  }
 
-    main ul {
-        font-size: 75%;
-    }
-
-    footer {
-        font-size: 75%;
-    }
-    
-    html:not([data-scroll='0']) body {
-        padding-top: 190px;
-    }
+  footer {
+    font-size: 75%;
+  }
+  /*
+  html:not([data-scroll="0"]) body {
+    padding-top: 190px;
+  }*/
 }
-
 
 /* iPhone 5/s width */
 @media screen and (max-width: 320px) {
+  header img {
+    width: 50px;
+    height: 50px;
+  }
 
-    header img {
-        width: 50px;
-        height: 50px;
-    }
+  header,
+  .navbar a,
+  .dropdown .dropbtn,
+  main,
+  main ul,
+  footer {
+    font-size: 50%;
+  }
 
-    header, .navbar a, .dropdown .dropbtn, main, main ul, footer {
-        font-size: 50%;
-    }
-    
-    html:not([data-scroll='0']) body {
-        padding-top: 120px;
-    }
+  main {
+    margin-top: -55px;
+  }
+
+  /*
+  html:not([data-scroll="0"]) body {
+    padding-top: 120px;
+  }*/
+}
+
+@media screen and (max-width: 280px) {
+  .navbar a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .contact-me {
+    margin-right: 18px;
+  }
 }

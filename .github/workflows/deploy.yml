@@ -34,5 +34,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          branch: gh-pages
-          clean: true
+          branch: main
+          clean-exclude: |
+            README.md
+            .github

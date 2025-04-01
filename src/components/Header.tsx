@@ -20,7 +20,7 @@ export default function Header() {
           transition={{ duration: 0.5 }}
         >
           <Link href="/" className="text-xl font-bold text-primary hover:text-primary-light transition-colors">
-            Ben
+            Ben Becker
           </Link>
         </motion.div>
 

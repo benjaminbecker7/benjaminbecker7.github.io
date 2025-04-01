@@ -1,7 +1,7 @@
 import { Resume } from '@/types/resume';
 
 export const resumeData: Resume = {
-  name: 'Benjamin Becker',
+  name: 'Ben Becker',
   contactInfo: {
     email: 'bckrben7@gmail.com',
     phone: '610-715-7578',

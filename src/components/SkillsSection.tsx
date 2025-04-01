@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 
 type Props = {
@@ -12,7 +14,7 @@ export default function SkillsSection({ skills }: Props) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-10"
+          className="text-3xl font-bold mb-10 text-primary"
         >
           Skills
         </motion.h2>
@@ -25,9 +27,9 @@ export default function SkillsSection({ skills }: Props) {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="bg-gray-100 px-4 py-2 rounded-full"
+              className="bg-primary/5 px-4 py-2 rounded-full border border-accent/20 hover:border-secondary/50 hover:bg-primary/10 transition-colors"
             >
-              <span className="text-gray-800">{skill}</span>
+              <span className="text-primary-light">{skill}</span>
             </motion.div>
           ))}
         </div>

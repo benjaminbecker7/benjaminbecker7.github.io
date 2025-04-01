@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -9,14 +11,14 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       <nav className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link href="/" className="text-xl font-bold text-gray-900">
+          <Link href="/" className="text-xl font-bold text-primary hover:text-primary-light transition-colors">
             Ben
           </Link>
         </motion.div>
@@ -31,7 +33,7 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-text-light hover:text-primary transition-colors"
               >
                 {item.name}
               </Link>

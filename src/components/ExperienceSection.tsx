@@ -9,7 +9,7 @@ type Props = {
 
 export default function ExperienceSection({ experiences }: Props) {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="pt-8 pb-20">
       <div className="max-w-5xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

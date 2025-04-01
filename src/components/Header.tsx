@@ -6,6 +6,7 @@ import Link from 'next/link';
 export default function Header() {
   const navItems = [
     { name: 'Experience', href: '#experience' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
     { name: 'Skills', href: '#skills' },
   ];
@@ -23,7 +24,7 @@ export default function Header() {
           </Link>
         </motion.div>
 
-        <ul className="flex space-x-8">
+        <ul className="flex space-x-6">
           {navItems.map((item, index) => (
             <motion.li
               key={item.name}

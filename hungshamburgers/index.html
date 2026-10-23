@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hung's Hamburgers</title>
+  <meta name="description" content="Hung's Hamburgers — the best hamburgers in the world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bun: #f2a541;
+      --ketchup: #d7263d;
+      --mustard: #ffd23f;
+      --lettuce: #3bb273;
+      --char: #1b1b1e;
+      --cream: #fff8ec;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--char);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+    header.hero {
+      background: radial-gradient(circle at 20% 20%, var(--mustard), var(--bun) 55%, var(--ketchup));
+      color: var(--char);
+      text-align: center;
+      padding: 90px 20px 110px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .emoji { font-size: clamp(64px, 14vw, 140px); line-height: 1; animation: bob 3s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-14px) rotate(4deg); } }
+    .hero h1 {
+      font-family: 'Bowlby One', sans-serif;
+      font-size: clamp(42px, 9vw, 96px);
+      line-height: 1;
+      margin: 18px 0 12px;
+      text-shadow: 4px 4px 0 var(--cream);
+    }
+    .hero p.tag { font-size: clamp(18px, 3vw, 26px); font-weight: 800; }
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      background: var(--char);
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: 999px;
+      box-shadow: 0 6px 0 var(--ketchup);
+      transition: transform .1s, box-shadow .1s;
+    }
+    .btn:hover { transform: translateY(3px); box-shadow: 0 3px 0 var(--ketchup); }
+
+    section { padding: 80px 0; }
+    h2 {
+      font-family: 'Bowlby One', sans-serif;
+      font-size: clamp(30px, 5vw, 48px);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .quote {
+      background: var(--char);
+      color: var(--cream);
+      text-align: center;
+    }
+    .quote blockquote {
+      font-size: clamp(22px, 4vw, 38px);
+      font-weight: 800;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    .quote blockquote::before { content: "\201C"; color: var(--mustard); }
+    .quote blockquote::after { content: "\201D"; color: var(--mustard); }
+    .quote cite { display: block; margin-top: 20px; font-style: normal; color: var(--bun); font-size: 20px; font-weight: 600; }
+    .quote .disclaimer { margin-top: 14px; font-size: 13px; opacity: .6; }
+
+    .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      background: #fff;
+      border: 3px solid var(--char);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 8px 8px 0 var(--char);
+    }
+    .card .big { font-size: 52px; }
+    .card h3 { font-size: 22px; margin: 8px 0; }
+    .card .price { font-weight: 800; color: var(--ketchup); font-size: 20px; margin-top: 10px; }
+
+    .why { background: var(--lettuce); color: #fff; }
+    .why .card { color: var(--char); }
+
+    footer { background: var(--char); color: var(--cream); text-align: center; padding: 40px 20px; font-size: 14px; }
+    footer strong { font-family: 'Bowlby One', sans-serif; font-size: 22px; display: block; margin-bottom: 6px; color: var(--mustard); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="emoji" aria-hidden="true">🍔</div>
+    <h1>Hung's Hamburgers</h1>
+    <p class="tag">The best hamburgers in the world. Not up for debate.</p>
+    <a class="btn" href="#menu">See the Menu</a>
+  </header>
+
+  <section class="quote">
+    <div class="wrap">
+      <blockquote>Hung's Hamburgers are the best hamburgers in the world. I'd freeze the rent just to have more money for these burgers.</blockquote>
+      <cite>— Zohran Mamdani, Mayor of New York City</cite>
+      <p class="disclaimer">*Parody. Not a real quote — Mayor Mamdani has not endorsed Hung's Hamburgers.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap">
+      <h2>The Menu</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="big">🍔</div>
+          <h3>The Classic Hung</h3>
+          <p>Double smash patty, American cheese, pickles, onions, and our secret Hung Sauce on a toasted potato bun.</p>
+          <div class="price">$12</div>
+        </div>
+        <div class="card">
+          <div class="big">🔥</div>
+          <h3>The Inferno</h3>
+          <p>Ghost-pepper jack, charred jalapeños, chipotle mayo. Waiver available upon request.</p>
+          <div class="price">$14</div>
+        </div>
+        <div class="card">
+          <div class="big">🥓</div>
+          <h3>The Big Hung</h3>
+          <p>Triple patty, thick-cut bacon, cheddar, crispy onion rings, and BBQ glaze. Bring a friend. Or don't.</p>
+          <div class="price">$17</div>
+        </div>
+        <div class="card">
+          <div class="big">🌱</div>
+          <h3>The Green Hung</h3>
+          <p>House-made veggie patty, avocado, tomato, butter lettuce, garlic aioli. Every bit as legendary.</p>
+          <div class="price">$13</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>Why Hung's?</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🐄 Fresh, never frozen</h3>
+          <p>Beef ground in-house every morning and smashed to order on a screaming-hot griddle.</p>
+        </div>
+        <div class="card">
+          <h3>🧪 The Hung Sauce</h3>
+          <p>A closely guarded family recipe. We'd tell you what's in it, but then we'd have to feed you another burger.</p>
+        </div>
+        <div class="card">
+          <h3>🏆 World's best</h3>
+          <p>We've eaten a lot of hamburgers. These are the best ones. That's just science.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>Hung's Hamburgers</strong>
+    Open late, every day · Come hungry, leave happy
+  </footer>
+</body>
+</html>
